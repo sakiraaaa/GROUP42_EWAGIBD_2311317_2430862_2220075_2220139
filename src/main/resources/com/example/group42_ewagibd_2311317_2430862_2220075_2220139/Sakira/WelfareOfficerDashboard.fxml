@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.WelfareOfficerDashboardController">
+   <children>
+      <Label layoutX="222.0" layoutY="14.0" prefHeight="33.0" prefWidth="208.0" text="Welfare  Officer" textFill="#300da1">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="86.0" layoutY="91.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="287.0" text="Upload Health And Safety Information" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="278.0" AnchorPane.topAnchor="330.0" />
+      <Button layoutX="86.0" layoutY="135.0" mnemonicParsing="false" onAction="#ScheduleTrainingProgramOA" prefHeight="33.0" prefWidth="287.0" text="Schedule Training Program" textFill="#390dd6" />
+      <Button layoutX="86.0" layoutY="182.0" mnemonicParsing="false" onAction="#PostAwarenessOnWorkersRightAndBenefitsOA" prefHeight="39.0" prefWidth="287.0" text="Post Awareness On Workers Right And Benefits" textFill="#3817d1" />
+      <Button layoutX="86.0" layoutY="235.0" mnemonicParsing="false" onAction="#ConductWorkerServiceOA" prefHeight="33.0" prefWidth="287.0" text="Conduct Worker Service" textFill="#4414b5" />
+      <Button layoutX="86.0" layoutY="281.0" mnemonicParsing="false" onAction="#CreateIncidentReportOA" prefHeight="33.0" prefWidth="287.0" text="Create Incident Report" textFill="#4815b0" />
+      <Button layoutX="86.0" layoutY="330.0" mnemonicParsing="false" onAction="#ConductEmergencyDrillOA" prefHeight="33.0" prefWidth="287.0" text="Conduct Emergency Drill" textFill="#3c12b5" />
+      <Button layoutX="86.0" layoutY="377.0" mnemonicParsing="false" onAction="#PostUpdatesOnCollaborationsAndPartnerships" prefHeight="39.0" prefWidth="287.0" text="Post Updates On Collaborations And Partnerships" textFill="#3d0f99" />
+      <Button layoutX="86.0" layoutY="430.0" mnemonicParsing="false" onAction="#SubmitWorkerAidRequestOA" prefHeight="33.0" prefWidth="287.0" text="Submit Worker Aid Request" textFill="#1b139c" />
+      <Button layoutX="546.0" layoutY="519.0" mnemonicParsing="false" onAction="#NextOA" text="Next" />
+      <Button layoutX="86.0" layoutY="89.0" mnemonicParsing="false" onAction="#UploadHealthAndSafetyInformationOA" prefHeight="33.0" prefWidth="287.0" text="Upload Health and Safety Information" textFill="#441fd7" />
+   </children>
+</AnchorPane>
