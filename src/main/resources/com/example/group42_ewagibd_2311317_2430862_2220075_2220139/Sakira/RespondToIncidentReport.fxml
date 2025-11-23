@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.RespondToIncidentReportController">
+   <children>
+      <Label layoutX="31.0" layoutY="44.0" text="Reporter Name :" />
+      <Label layoutX="31.0" layoutY="89.0" text="Incident Type :" />
+      <Label layoutX="300.0" layoutY="44.0" text="Location :" />
+      <Label layoutX="300.0" layoutY="89.0" text="Date :" />
+      <TextField fx:id="ReporterNameTF" layoutX="128.0" layoutY="40.0" prefHeight="26.0" prefWidth="153.0" />
+      <TextField fx:id="IncidentTypeTF" layoutX="128.0" layoutY="85.0" prefHeight="26.0" prefWidth="153.0" />
+      <TextField fx:id="LocationTF" layoutX="365.0" layoutY="41.0" prefHeight="26.0" prefWidth="153.0" />
+      <DatePicker fx:id="DateDP" layoutX="357.0" layoutY="85.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button layoutX="36.0" layoutY="165.0" mnemonicParsing="false" onAction="#IncidentReportOA" prefHeight="26.0" prefWidth="484.0" text=" Incident Report " />
+      <Button layoutX="31.0" layoutY="446.0" mnemonicParsing="false" onAction="#RespondOA" prefHeight="64.0" prefWidth="117.0" text="Respond" />
+      <TableView fx:id="IncidentReportTV" layoutX="28.0" layoutY="218.0" prefHeight="184.0" prefWidth="508.0">
+        <columns>
+          <TableColumn fx:id="ReporterNameTC" prefWidth="105.0" text="Reporter Name" />
+          <TableColumn fx:id="LocationTC" prefWidth="131.0" text="Location" />
+            <TableColumn fx:id="IncidentTypeTC" prefWidth="141.0" text="Incident Type" />
+            <TableColumn fx:id="DateTC" prefWidth="130.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

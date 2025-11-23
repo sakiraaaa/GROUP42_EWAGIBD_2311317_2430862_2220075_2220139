@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.AnnounceAndScheduleAuthorityMeetingController">
+   <children>
+      <Label layoutX="28.0" layoutY="31.0" text="Meeting Title :" />
+      <Label layoutX="28.0" layoutY="74.0" text="Agenda :" />
+      <Label layoutX="28.0" layoutY="117.0" text="Department :" />
+      <Label layoutX="28.0" layoutY="162.0" text="Participants :" />
+      <Label layoutX="28.0" layoutY="200.0" text="Date :" />
+      <TextField fx:id="MeetingTitleTF" layoutX="122.0" layoutY="27.0" />
+      <TextField fx:id="AgendaTF" layoutX="122.0" layoutY="70.0" />
+      <ComboBox fx:id="DepartmentCB" layoutX="122.0" layoutY="113.0" prefWidth="150.0" />
+      <ComboBox fx:id="ParticipantsCB" layoutX="122.0" layoutY="158.0" prefWidth="150.0" />
+      <DatePicker fx:id="DateDP" layoutX="114.0" layoutY="196.0" />
+      <Button layoutX="373.0" layoutY="33.0" mnemonicParsing="false" onAction="#AnnounceOA" prefHeight="106.0" prefWidth="118.0" text="Announce " />
+      <Button layoutX="21.0" layoutY="296.0" mnemonicParsing="false" onAction="#ConfirmAnnouncementOA" prefHeight="41.0" prefWidth="280.0" text="Confirm Announcement " />
+   </children>
+</AnchorPane>

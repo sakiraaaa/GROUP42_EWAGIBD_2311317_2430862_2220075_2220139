@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.PresidentDashboardController">
+   <children>
+      <Label layoutX="229.0" layoutY="14.0" text="President" textFill="#0b5496">
+         <font>
+            <Font name="Al Nile Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="79.0" mnemonicParsing="false" onAction="#AnnounceWelfareVisionAndGoals" prefHeight="34.0" prefWidth="252.0" text="Announce Welfare Vision and Goals" textFill="#425d94" />
+      <Button layoutX="83.0" layoutY="126.0" mnemonicParsing="false" onAction="#SetNewTermsAndConditionsOA" prefHeight="34.0" prefWidth="252.0" text="Set New Terms And Conditions" textFill="#3d5f9a" />
+      <Button layoutX="83.0" layoutY="170.0" mnemonicParsing="false" onAction="#UpdateAssociationAnnouncementsOA" prefHeight="34.0" prefWidth="252.0" text="Update Association Announcements" textFill="#355d9e" />
+      <Button layoutX="85.0" layoutY="215.0" mnemonicParsing="false" onAction="#PromoteAnEmployeeOA" prefHeight="34.0" prefWidth="252.0" text="Promote An Employee" textFill="#2e5f90" />
+      <Button layoutX="86.0" layoutY="263.0" mnemonicParsing="false" onAction="#IntroducingNewWelfareProgramsOA" prefHeight="34.0" prefWidth="252.0" text="Introducing New Welfare Programs" textFill="#2c598d" />
+      <Button layoutX="83.0" layoutY="310.0" mnemonicParsing="false" onAction="#RespondToIncidentReportOA" prefHeight="34.0" prefWidth="252.0" text="Respond to Incident Report" textFill="#2e5c8a" />
+      <Button layoutX="85.0" layoutY="358.0" mnemonicParsing="false" onAction="#AnnounceAndScheduleAuthorityMeetingOA" prefHeight="34.0" prefWidth="252.0" text="Announce And Schedule Authority Meeting" textFill="#265e9a" />
+      <Button layoutX="85.0" layoutY="402.0" mnemonicParsing="false" onAction="#ProposePartnershipOA" prefHeight="34.0" prefWidth="252.0" text="Propose Partnership" textFill="#285e94" />
+      <Button layoutX="455.0" layoutY="508.0" mnemonicParsing="false" onAction="#NextOA" prefHeight="26.0" prefWidth="86.0" text="Next" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.ProposePartnershipController">
+   <children>
+      <Label layoutX="43.0" layoutY="45.0" text="Organization Name :" />
+      <Label layoutX="43.0" layoutY="96.0" text="Overview :" />
+      <Label layoutX="43.0" layoutY="143.0" text="Type Of Partnership :" />
+      <TextField fx:id="OrganizationNameTF" layoutX="164.0" layoutY="41.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField fx:id="OverviewTF" layoutX="164.0" layoutY="92.0" prefHeight="26.0" prefWidth="206.0" />
+      <ComboBox fx:id="TypeOfPartnershipCB" layoutX="174.0" layoutY="139.0" prefHeight="26.0" prefWidth="196.0" />
+      <Button layoutX="417.0" layoutY="49.0" mnemonicParsing="false" onAction="#SendProposalOA" prefHeight="62.0" prefWidth="127.0" text="Send Proposal" />
+      <Button layoutX="43.0" layoutY="270.0" mnemonicParsing="false" onAction="#ConfirmOA" prefHeight="26.0" prefWidth="430.0" text="Confirm" />
+   </children>
+</AnchorPane>
