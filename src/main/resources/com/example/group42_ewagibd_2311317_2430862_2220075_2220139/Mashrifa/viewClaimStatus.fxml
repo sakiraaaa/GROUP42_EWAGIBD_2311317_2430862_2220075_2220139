@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.viewClaimStatusController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="603.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.viewClaimStatusController">
+   <children>
+      <Label fx:id="claimStatusLabel" layoutX="36.0" layoutY="30.0" prefHeight="18.0" prefWidth="592.0" style="-fx-background-color: lightgray;" text="                              Your Claim Status">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="239.0" layoutY="268.0" mnemonicParsing="false" onAction="#searchClaimsOnAction" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: lightgreen;" text="Search" />
+      <ComboBox fx:id="statusComboBox" layoutX="164.0" layoutY="147.0" prefWidth="150.0" />
+      <Button layoutX="239.0" layoutY="319.0" mnemonicParsing="false" onAction="#clearClaimsOnAction" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: red;" text="Clear" />
+      <TableView fx:id="tableView" layoutX="21.0" layoutY="389.0" prefHeight="200.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="claimIdColumn" prefWidth="132.8000144958496" text="Claim Id" />
+          <TableColumn fx:id="typeColumn" prefWidth="128.00001525878906" text="Type" />
+            <TableColumn fx:id="amountColumn" prefWidth="146.4000244140625" text="Amount" />
+            <TableColumn fx:id="statusColumn" prefWidth="123.99997558593748" text="Status" />
+            <TableColumn fx:id="dateColumn" prefWidth="123.99997558593748" text="Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchClaimsField" layoutX="165.0" layoutY="90.0" />
+      <Text layoutX="35.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Claims :" wrappingWidth="104.524169921875" />
+      <Text layoutX="35.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter by Status :" wrappingWidth="104.524169921875" />
+   </children>
 </AnchorPane>
