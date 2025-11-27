@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="472.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.submitClaimController">
+   <children>
+      <TextField fx:id="claimTypeField" layoutX="136.0" layoutY="14.0" prefHeight="62.0" prefWidth="196.0" />
+      <TextField fx:id="amountField" layoutX="136.0" layoutY="90.0" prefHeight="62.0" prefWidth="196.0" />
+      <TextArea fx:id="reasonArea" layoutX="17.0" layoutY="258.0" prefHeight="200.0" prefWidth="331.0" />
+      <Button layoutX="441.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleClearOnAction" prefHeight="77.0" prefWidth="178.0" text="Clear" />
+      <Label fx:id="errorLabel" layoutX="365.0" layoutY="76.0" prefHeight="62.0" prefWidth="363.0" style="-fx-background-color: lightblue;" text="       Please fill all required fields correctly.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="claimDatePicker" layoutX="136.0" layoutY="167.0" prefHeight="26.0" prefWidth="203.0" />
+      <Text layoutX="17.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Claim Type:" wrappingWidth="114.93670654296875" />
+      <Text layoutX="17.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" wrappingWidth="114.93670654296875" />
+      <Text layoutX="14.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="114.93670654296875" />
+      <Text layoutX="17.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reason:" wrappingWidth="114.93670654296875" />
+      <Button layoutX="441.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSubmitOnAction" prefHeight="77.0" prefWidth="178.0" text="Submit" />
+   </children>
+</AnchorPane>

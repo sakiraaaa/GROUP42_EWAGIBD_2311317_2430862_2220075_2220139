@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="497.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.employeeDashboardController">
+   <children>
+      <VBox layoutX="32.0" layoutY="24.0" prefHeight="428.0" prefWidth="211.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSubmitWelfareClaimOnAction" prefHeight="57.0" prefWidth="239.0" text="Submit Claim" />
+            <Button mnemonicParsing="false" onAction="#viewClaimStatusOnAction" prefHeight="60.0" prefWidth="219.0" text="View Claim Status" />
+            <Button mnemonicParsing="false" onAction="#handlePersonalInfoOnAction" prefHeight="62.0" prefWidth="226.0" text="Update Personal Info" />
+            <Button mnemonicParsing="false" onAction="#handleParticipateInTrainingOnAction" prefHeight="58.0" prefWidth="226.0" text="Trainings" />
+            <Button mnemonicParsing="false" onAction="#handleViewAnnouncementsOnAction" prefHeight="65.0" prefWidth="228.0" text="Announcements" />
+            <Button mnemonicParsing="false" onAction="#sendFeedbackOnAction" prefHeight="65.0" prefWidth="214.0" text="Send Feedback" />
+            <Button mnemonicParsing="false" onAction="#donateToWelfareFundOnAction" prefHeight="58.0" prefWidth="240.0" text="Donate" />
+         </children>
+      </VBox>
+      <Label fx:id="welcomeEmployeeLabel" layoutX="365.0" layoutY="154.0" prefHeight="122.0" prefWidth="374.0" text="        Welcome ! Employee">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

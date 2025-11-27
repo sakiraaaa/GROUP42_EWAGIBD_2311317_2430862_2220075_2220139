@@ -1,0 +1,43 @@
+package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+
+public class employeeDashboardController
+{
+
+    @javafx.fxml.FXML
+    private Label welcomeEmployeeLabel;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void viewClaimStatusOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void donateToWelfareFundOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void sendFeedbackOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handlePersonalInfoOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleViewAnnouncementsOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleSubmitWelfareClaimOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleParticipateInTrainingOnAction(ActionEvent actionEvent) {
+    }
+}
