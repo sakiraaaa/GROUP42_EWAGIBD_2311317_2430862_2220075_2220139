@@ -28,7 +28,7 @@
           <TableColumn fx:id="TopicTC" prefWidth="75.0" text="Topic" />
           <TableColumn fx:id="TrainerIDTC" prefWidth="75.0" text="Trainer ID" />
             <TableColumn fx:id="TrainingDateTC" prefWidth="97.0" text="Training Date" />
-            <TableColumn fx:id="TrainingTimeTC" prefWidth="92.0" text="Trainer Time" />
+            <TableColumn fx:id="TrainingTimeTC" prefWidth="92.0" text="Training Time" />
             <TableColumn fx:id="LocationTC" prefWidth="95.0" text="Location" />
             <TableColumn fx:id="ParticipatingDepartmentTC" prefWidth="175.0" text="Participating Department" />
         </columns>
