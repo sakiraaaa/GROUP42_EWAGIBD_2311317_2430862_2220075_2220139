@@ -37,5 +37,6 @@
       <Line endX="526.5" layoutX="115.0" layoutY="374.0" startX="-107.5" />
       <Button layoutX="22.0" layoutY="401.0" mnemonicParsing="false" onAction="#UploadOA" prefHeight="26.0" prefWidth="378.0" text="Upload" />
       <Label fx:id="ScheduleTrainingProgramLabel" layoutX="86.0" layoutY="501.0" prefHeight="26.0" prefWidth="364.0" style="-fx-background-color: yellow;" />
+      <Button layoutX="496.0" layoutY="544.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" text="Back To DashBoard" />
    </children>
 </AnchorPane>

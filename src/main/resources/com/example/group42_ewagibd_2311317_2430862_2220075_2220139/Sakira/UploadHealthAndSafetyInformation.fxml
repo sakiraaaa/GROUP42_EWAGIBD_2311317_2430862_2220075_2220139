@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.UploadHealthAndSafetyInformationController">
    <children>
       <Label layoutX="21.0" layoutY="31.0" text="Title:" />
@@ -30,5 +29,6 @@
       </TableView>
       <Label fx:id="InfoLabel" layoutX="42.0" layoutY="413.0" prefHeight="26.0" prefWidth="525.0" style="-fx-background-color: yellow;" textFill="#7c1414" />
       <Button layoutX="47.0" layoutY="156.0" mnemonicParsing="false" onAction="#UploadNewHealthAndSafetyInformationOA" prefHeight="26.0" prefWidth="541.0" text="Upload New Health And Safety Information" />
+      <Button layoutX="498.0" layoutY="500.0" mnemonicParsing="false" onAction="#BackToDashBoard" text="Back To DashBoard" />
    </children>
 </AnchorPane>

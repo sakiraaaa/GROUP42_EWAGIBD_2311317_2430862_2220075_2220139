@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.SetNewTermsAndConditionsController">
    <children>
       <Label layoutX="14.0" layoutY="47.0" text="New Term Statement :" />
@@ -22,5 +21,6 @@
       <Button layoutX="405.0" layoutY="222.0" mnemonicParsing="false" onAction="#AddNewTAndC" prefHeight="67.0" prefWidth="150.0" text="Add New T And C" textFill="#2a19c2" />
       <Label fx:id="AddNewTAndCLabel" layoutX="359.0" layoutY="26.0" prefHeight="169.0" prefWidth="221.0" style="-fx-background-color: pink; -fx-background-position: center;" />
       <TextField fx:id="SpecificCriteriaTF" layoutX="116.0" layoutY="174.0" prefHeight="26.0" prefWidth="221.0" />
+      <Button layoutX="293.0" layoutY="476.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="247.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>

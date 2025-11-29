@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
@@ -35,6 +36,14 @@ public class ConductEmergencyDrillController
 
     @javafx.fxml.FXML
     public void initialize() {
+        TypeCB.getItems().addAll("Earthquake drill" , "Evacuation Drill" , "Lockdown Drill" , "Fire Drill");
+        TeamMembersTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,Integer>("TeamMembers"));
+        TypeTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,String>("Type"));
+        LocationTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,String>("Location"));
+        DateTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,LocalDate>("Date"));
+
+
+
     }
 
     @javafx.fxml.FXML

@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.PostUpdatesOnCollaborationsAndPartnershipsController">
    <children>
       <Label layoutX="25.0" layoutY="26.0" text="Title :" />
@@ -29,5 +28,6 @@
       <Button layoutX="44.0" layoutY="371.0" mnemonicParsing="false" onAction="#CreateNewUpdateOA" prefHeight="26.0" prefWidth="486.0" text="Create New Update" />
       <Label fx:id="UpdateOnCollaborationLabel" layoutX="50.0" layoutY="443.0" prefHeight="33.0" prefWidth="445.0" style="-fx-background-color: yellow;" />
       <ComboBox fx:id="VisibilityCB" layoutX="117.0" layoutY="133.0" prefHeight="26.0" prefWidth="160.0" />
+      <Button layoutX="432.0" layoutY="527.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="160.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>

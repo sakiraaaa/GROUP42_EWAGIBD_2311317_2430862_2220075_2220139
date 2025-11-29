@@ -25,8 +25,9 @@
       </TableView>
       <Button fx:id="CreateAwarenessPostOA" layoutX="326.0" layoutY="153.0" mnemonicParsing="false" onAction="#CreateAwarenessPostOA" prefHeight="26.0" prefWidth="153.0" text="Create Awareness Post" />
       <Line endX="534.0" layoutX="117.0" layoutY="355.0" startX="-117.0" />
-      <Button layoutX="34.0" layoutY="544.0" mnemonicParsing="false" onAction="#PublishOA" prefHeight="26.0" prefWidth="546.0" text="Publish" />
+      <Button layoutX="34.0" layoutY="489.0" mnemonicParsing="false" onAction="#PublishOA" prefHeight="26.0" prefWidth="546.0" text="Publish" />
       <Label fx:id="AwarenessLabel" layoutX="34.0" layoutY="414.0" prefHeight="43.0" prefWidth="493.0" style="-fx-background-color: yellow;" />
       <ComboBox fx:id="VisibilityCB" layoutX="88.0" layoutY="114.0" prefWidth="150.0" />
+      <Button layoutX="503.0" layoutY="555.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" text="Back To DashBoard" />
    </children>
 </AnchorPane>

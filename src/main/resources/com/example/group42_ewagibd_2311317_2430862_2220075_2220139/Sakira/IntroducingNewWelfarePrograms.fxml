@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.IntroducingNewWelfareProgramsController">
    <children>
       <Label layoutX="14.0" layoutY="30.0" text="Program Title :" />
@@ -23,8 +22,8 @@
       <ComboBox fx:id="ProgramCatagoryCB" layoutX="389.0" layoutY="122.0" prefWidth="150.0" />
       <TextField layoutX="384.0" layoutY="74.0" />
       <Button layoutX="23.0" layoutY="182.0" mnemonicParsing="false" onAction="#AddProgramOA" prefHeight="26.0" prefWidth="509.0" text="Add Program" />
-      <Button layoutX="24.0" layoutY="474.0" mnemonicParsing="false" onAction="#NewWelfareProgramOA" prefHeight="65.0" prefWidth="137.0" text="New Welfare Program" />
-      <Label fx:id="IntroducingWelfareProgramLabel" layoutX="237.0" layoutY="477.0" prefHeight="38.0" prefWidth="336.0" style="-fx-background-color: pink;" />
+      <Button layoutX="24.0" layoutY="419.0" mnemonicParsing="false" onAction="#NewWelfareProgramOA" prefHeight="65.0" prefWidth="137.0" text="New Welfare Program" />
+      <Label fx:id="IntroducingWelfareProgramLabel" layoutX="227.0" layoutY="425.0" prefHeight="38.0" prefWidth="336.0" style="-fx-background-color: pink;" />
       <TableView fx:id="WelfareProgramsTV" layoutX="6.0" layoutY="225.0" prefHeight="150.0" prefWidth="586.0">
         <columns>
           <TableColumn fx:id="ProgramTitleTC" prefWidth="97.0" text="Program Title" />
@@ -34,5 +33,6 @@
             <TableColumn fx:id="DateTC" prefWidth="82.0" text="Date" />
         </columns>
       </TableView>
+      <Button layoutX="319.0" layoutY="527.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="172.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>

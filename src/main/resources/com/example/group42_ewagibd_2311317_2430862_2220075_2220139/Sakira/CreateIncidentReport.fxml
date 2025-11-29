@@ -9,7 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.CreateIncidentReportController">
    <children>
       <Label layoutX="34.0" layoutY="31.0" text="Date :" />
@@ -30,5 +29,6 @@
             <TableColumn fx:id="TimeTC" prefWidth="109.0" text="Time" />
         </columns>
       </TableView>
+      <Button layoutX="421.0" layoutY="500.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="179.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>

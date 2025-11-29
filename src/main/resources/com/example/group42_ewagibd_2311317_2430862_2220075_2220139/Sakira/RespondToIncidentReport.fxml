@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.RespondToIncidentReportController">
    <children>
       <Label layoutX="31.0" layoutY="44.0" text="Reporter Name :" />
@@ -29,5 +28,6 @@
             <TableColumn fx:id="DateTC" prefWidth="130.0" text="Date" />
         </columns>
       </TableView>
+      <Button layoutX="452.0" layoutY="523.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" text="Back To DashBoard" />
    </children>
 </AnchorPane>

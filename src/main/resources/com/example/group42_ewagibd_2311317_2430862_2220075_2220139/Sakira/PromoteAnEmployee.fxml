@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.PromoteAnEmployeeController">
    <children>
       <Label layoutX="22.0" layoutY="30.0" text="Name :" />
@@ -26,5 +25,6 @@
       <Button layoutX="450.0" layoutY="320.0" mnemonicParsing="false" onAction="#PromoteOA" prefHeight="44.0" prefWidth="71.0" text="Promote" />
       <TextField fx:id="PerformanceLevelTF" layoutX="139.0" layoutY="184.0" />
       <Label fx:id="PromoteAnEmployeeLabel" layoutX="22.0" layoutY="400.0" prefHeight="44.0" prefWidth="355.0" style="-fx-background-color: pink;" />
+      <Button layoutX="419.0" layoutY="505.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="150.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>
