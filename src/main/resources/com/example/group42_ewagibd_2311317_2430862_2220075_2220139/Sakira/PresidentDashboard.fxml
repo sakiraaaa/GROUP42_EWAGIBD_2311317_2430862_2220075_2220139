@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.PresidentDashboardController">
    <children>
       <Label layoutX="229.0" layoutY="14.0" text="President" textFill="#0b5496">
@@ -13,7 +12,7 @@
             <Font name="Al Nile Bold" size="31.0" />
          </font>
       </Label>
-      <Button layoutX="83.0" layoutY="79.0" mnemonicParsing="false" onAction="#AnnounceWelfareVisionAndGoals" prefHeight="34.0" prefWidth="252.0" text="Announce Welfare Vision and Goals" textFill="#425d94" />
+      <Button layoutX="83.0" layoutY="79.0" mnemonicParsing="false" onAction="#AnnounceWelfareVisionAndGoalsOA" prefHeight="34.0" prefWidth="252.0" text="Announce Welfare Vision and Goals" textFill="#425d94" />
       <Button layoutX="83.0" layoutY="126.0" mnemonicParsing="false" onAction="#SetNewTermsAndConditionsOA" prefHeight="34.0" prefWidth="252.0" text="Set New Terms And Conditions" textFill="#3d5f9a" />
       <Button layoutX="83.0" layoutY="170.0" mnemonicParsing="false" onAction="#UpdateAssociationAnnouncementsOA" prefHeight="34.0" prefWidth="252.0" text="Update Association Announcements" textFill="#355d9e" />
       <Button layoutX="85.0" layoutY="215.0" mnemonicParsing="false" onAction="#PromoteAnEmployeeOA" prefHeight="34.0" prefWidth="252.0" text="Promote An Employee" textFill="#2e5f90" />

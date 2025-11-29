@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-
 <AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.PostAwarenessOnWorkersRightsAndBenefitsController">
    <children>
       <Label layoutX="19.0" layoutY="32.0" text="Title :" />
@@ -19,7 +18,7 @@
       <TextField fx:id="ContentTF" layoutX="88.0" layoutY="69.0" />
       <TableView fx:id="PostAwarenessTV" layoutX="23.0" layoutY="191.0" prefHeight="134.0" prefWidth="464.0">
         <columns>
-          <TableColumn prefWidth="129.0" text="Title" />
+          <TableColumn fx:id="TitleTC" prefWidth="129.0" text="Title" />
           <TableColumn fx:id="ContentTC" prefWidth="221.0" text="Content" />
             <TableColumn fx:id="VisibilityTC" prefWidth="113.0" text="Visibility" />
         </columns>

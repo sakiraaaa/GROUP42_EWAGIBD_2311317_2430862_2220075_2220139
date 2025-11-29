@@ -9,7 +9,7 @@ public class SubmitWorkerAidRequestController
     @javafx.fxml.FXML
     private TextField ReasonTF;
     @javafx.fxml.FXML
-    private ComboBox TypeOfAidCB;
+    private ComboBox<String> TypeOfAidCB;
     @javafx.fxml.FXML
     private TextField RequestedAmountTF;
     @javafx.fxml.FXML
@@ -19,6 +19,7 @@ public class SubmitWorkerAidRequestController
 
     @javafx.fxml.FXML
     public void initialize() {
+        TypeOfAidCB.getItems().addAll("");
     }
 
     @javafx.fxml.FXML

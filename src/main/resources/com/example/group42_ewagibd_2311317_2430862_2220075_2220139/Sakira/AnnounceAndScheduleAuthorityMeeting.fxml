@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.AnnounceAndScheduleAuthorityMeetingController">
    <children>
       <Label layoutX="28.0" layoutY="31.0" text="Meeting Title :" />
@@ -22,5 +21,6 @@
       <DatePicker fx:id="DateDP" layoutX="114.0" layoutY="196.0" />
       <Button layoutX="373.0" layoutY="33.0" mnemonicParsing="false" onAction="#AnnounceOA" prefHeight="106.0" prefWidth="118.0" text="Announce " />
       <Button layoutX="21.0" layoutY="296.0" mnemonicParsing="false" onAction="#ConfirmAnnouncementOA" prefHeight="41.0" prefWidth="280.0" text="Confirm Announcement " />
+      <Button layoutX="254.0" layoutY="521.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="295.0" text="Back To DashBoard" />
    </children>
 </AnchorPane>

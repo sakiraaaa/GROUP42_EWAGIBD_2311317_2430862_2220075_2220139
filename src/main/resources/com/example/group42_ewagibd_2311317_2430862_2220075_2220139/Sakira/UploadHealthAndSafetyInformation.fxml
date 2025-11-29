@@ -24,8 +24,8 @@
         <columns>
           <TableColumn fx:id="TitleTC" prefWidth="75.0" text="Title" />
           <TableColumn fx:id="DepartmentTC" prefWidth="113.0" text="Department" />
-            <TableColumn fx:id="PublishedDateTC" prefWidth="126.0" text="Published Date" />
-            <TableColumn fx:id="DescriptionTC" prefWidth="236.0" text="Description" />
+          <TableColumn fx:id="PublishedDateTC" prefWidth="126.0" text="Published Date" />
+          <TableColumn fx:id="DescriptionTC" prefWidth="236.0" text="Description" />
         </columns>
       </TableView>
       <Label fx:id="InfoLabel" layoutX="42.0" layoutY="413.0" prefHeight="26.0" prefWidth="525.0" style="-fx-background-color: yellow;" textFill="#7c1414" />

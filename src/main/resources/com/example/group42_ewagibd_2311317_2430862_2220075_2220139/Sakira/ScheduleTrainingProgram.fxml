@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-
 <AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.ScheduleTrainingProgramController">
    <children>
       <Label layoutX="22.0" layoutY="27.0" text="Topic :" />
@@ -29,7 +28,7 @@
           <TableColumn fx:id="TopicTC" prefWidth="75.0" text="Topic" />
           <TableColumn fx:id="TrainerIDTC" prefWidth="75.0" text="Trainer ID" />
             <TableColumn fx:id="TrainingDateTC" prefWidth="97.0" text="Training Date" />
-            <TableColumn fx:id="TrainerTimeTC" prefWidth="92.0" text="Trainer Time" />
+            <TableColumn fx:id="TrainingTimeTC" prefWidth="92.0" text="Trainer Time" />
             <TableColumn fx:id="LocationTC" prefWidth="95.0" text="Location" />
             <TableColumn fx:id="ParticipatingDepartmentTC" prefWidth="175.0" text="Participating Department" />
         </columns>

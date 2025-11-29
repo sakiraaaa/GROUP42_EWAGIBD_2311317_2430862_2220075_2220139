@@ -1,22 +1,28 @@
 package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira;
 
+import com.example.group42_ewagibd_2311317_2430862_2220075_2220139.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 public class AnnounceWelfareVisionAndGoalsController
 {
     @javafx.fxml.FXML
-    private TableView AnnounceWelfareVisionAndGoalsTV;
+    private TableView<Announcement> AnnounceWelfareVisionAndGoalsTV;
     @javafx.fxml.FXML
     private TextField TitleTF;
     @javafx.fxml.FXML
-    private ComboBox SelectiveVisibilityCB;
+    private ComboBox<String> SelectiveVisibilityCB;
     @javafx.fxml.FXML
-    private TableColumn SelectiveVisibilityTC;
+    private TableColumn<Announcement, String> SelectiveVisibilityTC;
     @javafx.fxml.FXML
-    private TableColumn DescriptionTC;
+    private TableColumn<Announcement, String> DescriptionTC;
     @javafx.fxml.FXML
-    private TableColumn TitleTC;
+    private TableColumn<Announcement, String> TitleTC;
     @javafx.fxml.FXML
     private Label AnnouncWelfareVisionAndGoalsLabel;
     @javafx.fxml.FXML
@@ -24,6 +30,10 @@ public class AnnounceWelfareVisionAndGoalsController
 
     @javafx.fxml.FXML
     public void initialize() {
+        SelectiveVisibilityCB.getItems().addAll("employees", "private" , "public" , "custom");
+        TitleTC.setCellValueFactory(new PropertyValueFactory<Announcement,String>("Title"));
+        DescriptionTC.setCellValueFactory(new PropertyValueFactory<Announcement,String>("Description"));
+        SelectiveVisibilityTC.setCellValueFactory(new PropertyValueFactory<Announcement,String>("SelectiveVisibility"));
     }
 
     @javafx.fxml.FXML
@@ -32,5 +42,20 @@ public class AnnounceWelfareVisionAndGoalsController
 
     @javafx.fxml.FXML
     public void AddNewAnnouncementOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void BackToDashBoardOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PresidentDashBoard.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("PresidentDashBoard");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
