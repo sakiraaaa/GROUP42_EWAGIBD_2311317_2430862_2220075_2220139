@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="563.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.adminDashboardController">
+<AnchorPane prefHeight="675.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.adminDashboardController">
    <children>
-      <Label fx:id="welcomeSystemLabel" accessibleText="background" contentDisplay="CENTER" layoutX="241.0" layoutY="117.0" prefHeight="98.0" prefWidth="474.0" style="-fx-content-display: darkred;" text="                     Welcome! System Addministrator">
+      <Label fx:id="welcomeSystemLabel" accessibleText="background" contentDisplay="CENTER" layoutX="303.0" layoutY="269.0" prefHeight="98.0" prefWidth="395.0" style="-fx-background-color: light;" text="               Welcome! System Addministrator">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <VBox layoutX="20.0" layoutY="13.0" prefHeight="522.0" prefWidth="250.0">
+      <VBox layoutX="26.0" layoutY="107.0" prefHeight="522.0" prefWidth="250.0">
          <children>
             <Button mnemonicParsing="false" onAction="#managerUsersOnAction" prefHeight="124.0" prefWidth="259.0" text="Manage Users" />
             <Button mnemonicParsing="false" onAction="#approveClaimsOnAction" prefHeight="108.0" prefWidth="249.0" text="Approve Claims" />
@@ -24,5 +24,11 @@
             <Button mnemonicParsing="false" onAction="#accessPermissionsOnAction" prefHeight="120.0" prefWidth="279.0" text="Access Permissons" />
          </children>
       </VBox>
+      <Label fx:id="adminLabel" layoutX="84.0" layoutY="14.0" prefHeight="66.0" prefWidth="539.0" style="-fx-background-color: lightgreen;" text="    System Administrator">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="552.0" layoutY="573.0" mnemonicParsing="false" onAction="#nextOnAction" prefHeight="50.0" prefWidth="109.0" text="Next" />
    </children>
 </AnchorPane>

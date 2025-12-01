@@ -8,6 +8,8 @@ public class employeeDashboardController
 
     @javafx.fxml.FXML
     private Label welcomeEmployeeLabel;
+    @javafx.fxml.FXML
+    private Label employeeLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -39,5 +41,9 @@ public class employeeDashboardController
 
     @javafx.fxml.FXML
     public void handleParticipateInTrainingOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void nextButtonOnAction(ActionEvent actionEvent) {
     }
 }
