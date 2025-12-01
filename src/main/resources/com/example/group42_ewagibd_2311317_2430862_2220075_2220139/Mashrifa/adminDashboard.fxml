@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="675.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.SystemAdministratorController">
+<AnchorPane prefHeight="675.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.AdminDashboardController">
    <children>
       <Label fx:id="welcomeSystemLabel" accessibleText="background" contentDisplay="CENTER" layoutX="303.0" layoutY="269.0" prefHeight="98.0" prefWidth="395.0" style="-fx-background-color: light;" text="               Welcome! System Addministrator">
          <font>
