@@ -1,30 +1,28 @@
 package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class submitClaimController
+public class DonationFormController
 {
     @javafx.fxml.FXML
-    private TextField claimTypeField;
+    private Label donationAmouontLabel;
     @javafx.fxml.FXML
-    private TextArea reasonArea;
+    private Label paymentMathodLabel;
     @javafx.fxml.FXML
-    private Label errorLabel;
+    private Label massageLabel;
     @javafx.fxml.FXML
-    private DatePicker claimDatePicker;
+    private TextField purposeTextFeild;
     @javafx.fxml.FXML
-    private TextField amountField;
+    private TextField payrollTextField;
+    @javafx.fxml.FXML
+    private Label fundDonationLabel;
+    @javafx.fxml.FXML
+    private TextField donationAmountTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @javafx.fxml.FXML
-    public void handleClearOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

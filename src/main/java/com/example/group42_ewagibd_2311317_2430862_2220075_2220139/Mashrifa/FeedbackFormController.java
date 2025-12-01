@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class feedbackFormController
+public class FeedbackFormController
 {
     @javafx.fxml.FXML
     private TextArea feedbackMassageArea;

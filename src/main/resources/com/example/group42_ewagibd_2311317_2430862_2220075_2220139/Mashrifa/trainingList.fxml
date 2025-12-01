@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="471.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.trainingListController">
+<AnchorPane prefHeight="471.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.TrainingListController">
    <children>
       <Label fx:id="trainingProgramsLabel" layoutX="-10.0" prefHeight="46.0" prefWidth="620.0" style="-fx-background-color: skyblue;" text="                      Available Training Programs">
          <font>

@@ -1,7 +1,7 @@
 module com.example.group42_ewagibd_2311317_2430862_2220075_2220139 {
     requires javafx.controls;
     requires javafx.fxml;
-    requires com.example.group42_ewagibd_2311317_2430862_2220075_2220139;
+
     requires javafx.graphics;
 
 

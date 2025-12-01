@@ -3,10 +3,12 @@ package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class viewClaimStatusController
+public class ViewClaimStatusController
 {
     @javafx.fxml.FXML
     private TextField searchClaimsField;
+    @javafx.fxml.FXML
+    private ComboBox statusComboBox;
     @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
@@ -21,8 +23,6 @@ public class viewClaimStatusController
     private TableColumn typeColumn;
     @javafx.fxml.FXML
     private TableColumn claimIdColumn;
-    @javafx.fxml.FXML
-    private ComboBox statusComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
