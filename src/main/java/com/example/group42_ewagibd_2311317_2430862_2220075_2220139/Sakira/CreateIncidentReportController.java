@@ -6,31 +6,40 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
 
 public class CreateIncidentReportController
 {
     @javafx.fxml.FXML
-    private ComboBox DepartmentCB;
+    private TableView<Report> CreateIncidentReportTV;
     @javafx.fxml.FXML
-    private TableColumn DepartmentTC;
-    @javafx.fxml.FXML
-    private TableView CreateIncidentReportTV;
-    @javafx.fxml.FXML
-    private TableColumn DateTC;
+    private TableColumn<Report, LocalDate> DateTC;
     @javafx.fxml.FXML
     private DatePicker DateDP;
     @javafx.fxml.FXML
-    private TableColumn LocationTC;
+    private TableColumn<Report , String> LocationTC;
     @javafx.fxml.FXML
-    private TableColumn TimeTC;
+    private TableColumn<Report , String> TimeTC;
     @javafx.fxml.FXML
     private TextField TimeTF;
     @javafx.fxml.FXML
     private TextField LocationTF;
+    @javafx.fxml.FXML
+    private TextField ReporterNameTF;
+    @javafx.fxml.FXML
+    private TableColumn<Report , String> ReporterNameTC;
+
+
 
     @javafx.fxml.FXML
     public void initialize() {
+        ReporterNameTC.setCellValueFactory(new PropertyValueFactory<Report , String>("ReporterName"));
+        LocationTC.setCellValueFactory(new PropertyValueFactory<Report , String>("Location"));
+        DateTC.setCellValueFactory(new PropertyValueFactory<Report , LocalDate>("Date"));
+        TimeTC.setCellValueFactory(new PropertyValueFactory<Report , String>("Time"));
     }
 
     @javafx.fxml.FXML
@@ -53,5 +62,9 @@ public class CreateIncidentReportController
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @javafx.fxml.FXML
+    public void isAmRadioButton(ActionEvent actionEvent) {
     }
 }

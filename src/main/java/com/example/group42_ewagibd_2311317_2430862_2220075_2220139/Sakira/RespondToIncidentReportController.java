@@ -16,27 +16,21 @@ public class RespondToIncidentReportController
     @javafx.fxml.FXML
     private TableView IncidentReportTV;
     @javafx.fxml.FXML
-    private TextField IncidentTypeTF;
-    @javafx.fxml.FXML
-    private TextField ReporterNameTF;
-    @javafx.fxml.FXML
     private TableColumn DateTC;
-    @javafx.fxml.FXML
-    private DatePicker DateDP;
     @javafx.fxml.FXML
     private TableColumn LocationTC;
     @javafx.fxml.FXML
     private TableColumn ReporterNameTC;
     @javafx.fxml.FXML
-    private TextField LocationTF;
-    @javafx.fxml.FXML
     private TableColumn IncidentTypeTC;
+    @javafx.fxml.FXML
+    private TextField ResponseMessageTF;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void IncidentReportOA(ActionEvent actionEvent) {
     }
 
