@@ -6,15 +6,11 @@ import javafx.scene.control.*;
 public class ViewClaimStatusController
 {
     @javafx.fxml.FXML
-    private TextField searchClaimsField;
-    @javafx.fxml.FXML
     private ComboBox statusComboBox;
     @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
     private TableColumn amountColumn;
-    @javafx.fxml.FXML
-    private TableView tableView;
     @javafx.fxml.FXML
     private TableColumn dateColumn;
     @javafx.fxml.FXML
@@ -23,6 +19,12 @@ public class ViewClaimStatusController
     private TableColumn typeColumn;
     @javafx.fxml.FXML
     private TableColumn claimIdColumn;
+    @javafx.fxml.FXML
+    private TableColumn dateColumn1;
+    @javafx.fxml.FXML
+    private TableView claimTableView;
+    @javafx.fxml.FXML
+    private TextField searchClaimsTexField;
 
     @javafx.fxml.FXML
     public void initialize() {
