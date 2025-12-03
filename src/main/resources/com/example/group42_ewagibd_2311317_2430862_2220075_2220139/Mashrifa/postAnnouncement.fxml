@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.PostAnnouncementController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="463.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.PostAnnouncementController">
+   <children>
+      <Label fx:id="publishAnnouncementsLabel" layoutX="179.0" layoutY="-4.0" style="-fx-font-style: Italic;" text="Publish Announcements" textFill="#0d1dc7">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="contentLabel" layoutX="14.0" layoutY="102.0" prefHeight="26.0" prefWidth="122.0" text="Enter content :" />
+      <Label fx:id="departmentLabel" layoutX="14.0" layoutY="152.0" prefHeight="26.0" prefWidth="122.0" text="Select Department :" />
+      <Label fx:id="selectDataLabel" layoutX="14.0" layoutY="195.0" prefHeight="26.0" prefWidth="122.0" text="Select date :" />
+      <TextField fx:id="announcementTitlelabel" layoutX="184.0" layoutY="56.0" />
+      <TextArea fx:id="contentTextArea" layoutX="185.0" layoutY="90.0" prefHeight="50.0" prefWidth="371.0" />
+      <ComboBox fx:id="dateComboBox" layoutX="185.0" layoutY="196.0" prefWidth="150.0" />
+      <DatePicker fx:id="departmentDatePicker" layoutX="185.0" layoutY="153.0" />
+      <Button layoutX="497.0" layoutY="232.0" mnemonicParsing="false" onAction="#publishAnnouncementOnAction" onDragDetected="#piblishAnnouncementButtonOnAction" prefHeight="26.0" prefWidth="141.0" text="Publish Announcement" />
+      <TableView fx:id="publishTableView" layoutX="8.0" layoutY="281.0" prefHeight="168.0" prefWidth="652.0">
+        <columns>
+          <TableColumn prefWidth="168.80001544952393" text="Announcement title" />
+          <TableColumn minWidth="0.0" prefWidth="172.8000030517578" text="Content" />
+            <TableColumn minWidth="0.0" prefWidth="160.0" text="Department" />
+            <TableColumn minWidth="0.0" prefWidth="149.60003662109375" text="Date" />
+        </columns>
+      </TableView>
+      <Label fx:id="contentLabel1" layoutX="14.0" layoutY="55.0" prefHeight="26.0" prefWidth="150.0" text="Enter Announcement Title :" />
+   </children>
 </AnchorPane>

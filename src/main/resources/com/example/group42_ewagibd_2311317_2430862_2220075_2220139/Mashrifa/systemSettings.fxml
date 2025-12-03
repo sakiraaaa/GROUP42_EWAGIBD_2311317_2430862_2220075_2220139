@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.SystemSettingsController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="230.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.SystemSettingsController">
+   <children>
+      <Label fx:id="systemSettingsLabel" layoutX="115.0" prefHeight="45.0" prefWidth="205.0" style="-fx-font-style: Italic;" text=" System Settings">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="enableNotiCheckBox" layoutX="26.0" layoutY="64.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="146.0" text="Enable Notifications" />
+      <Label fx:id="selectProgramTypeLabel" layoutX="26.0" layoutY="112.0" prefHeight="34.0" prefWidth="121.0" text="Select Program Type :" />
+      <ComboBox fx:id="programTypeComboBox" layoutX="146.0" layoutY="117.0" prefWidth="150.0" />
+      <Button layoutX="150.0" layoutY="177.0" mnemonicParsing="false" onAction="#saveChangesButtonOnAction" prefHeight="26.0" prefWidth="134.0" text="Save Changes" />
+   </children>
 </AnchorPane>

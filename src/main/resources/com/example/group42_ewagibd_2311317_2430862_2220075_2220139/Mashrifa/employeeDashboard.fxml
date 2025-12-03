@@ -6,29 +6,28 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="595.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.EmployeeDashboardController">
+<AnchorPane prefHeight="611.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.EmployeeDashboardController">
    <children>
-      <VBox layoutX="254.0" layoutY="150.0" prefHeight="426.0" prefWidth="222.0">
+      <VBox layoutX="148.0" layoutY="164.0" prefHeight="416.0" prefWidth="239.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handleSubmitWelfareClaimOnAction" prefHeight="57.0" prefWidth="239.0" text="Submit Claim" />
             <Button mnemonicParsing="false" onAction="#viewClaimStatusOnAction" prefHeight="59.0" prefWidth="266.0" text="View Claim Status" />
-            <Button mnemonicParsing="false" onAction="#handlePersonalInfoOnAction" prefHeight="62.0" prefWidth="226.0" text="Update Personal Info" />
-            <Button mnemonicParsing="false" onAction="#handleParticipateInTrainingOnAction" prefHeight="58.0" prefWidth="226.0" text="Trainings" />
-            <Button mnemonicParsing="false" onAction="#handleViewAnnouncementsOnAction" prefHeight="65.0" prefWidth="228.0" text="Announcements" />
-            <Button mnemonicParsing="false" onAction="#sendFeedbackOnAction" prefHeight="66.0" prefWidth="228.0" text="Send Feedback" />
-            <Button mnemonicParsing="false" onAction="#donateToWelfareFundOnAction" prefHeight="58.0" prefWidth="240.0" text="Donate" />
+            <Button mnemonicParsing="false" onAction="#trainingEnrollmentOnAction" prefHeight="58.0" prefWidth="244.0" text="Training Enrollment" />
+            <Button mnemonicParsing="false" onAction="#handleProfileOnAction" prefHeight="54.0" prefWidth="269.0" text="Update Profile" />
+            <Button mnemonicParsing="false" onAction="#handleViewAnnouncementsOnAction" prefHeight="62.0" prefWidth="270.0" text="Announcements" />
+            <Button mnemonicParsing="false" onAction="#sendFeedbackOnAction" prefHeight="63.0" prefWidth="258.0" text="Send Feedback" />
+            <Button mnemonicParsing="false" onAction="#donateToWelfareFundOnAction" prefHeight="58.0" prefWidth="240.0" text="Donation" />
          </children>
       </VBox>
-      <Label fx:id="welcomeEmployeeLabel" layoutY="79.0" prefHeight="86.0" prefWidth="274.0" text="  Welcome ! Employee">
+      <Label fx:id="welcomeEmployeeLabel" layoutX="162.0" layoutY="115.0" prefHeight="38.0" prefWidth="210.0" text="  Welcome ! Employee !" textFill="#cf136b">
          <font>
-            <Font size="26.0" />
+            <Font size="19.0" />
          </font>
       </Label>
-      <Label fx:id="employeeLabel" layoutX="125.0" layoutY="14.0" prefHeight="62.0" prefWidth="459.0" style="-fx-background-color: lightblue;" text="            Employee">
+      <Label fx:id="employeeLabel" layoutX="53.0" layoutY="14.0" prefHeight="62.0" prefWidth="459.0" style="-fx-font-style: Italic;" text="     Employee Dashboard" textFill="#0262d7">
          <font>
-            <Font size="39.0" />
+            <Font size="38.0" />
          </font>
       </Label>
-      <Button layoutX="648.0" layoutY="516.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="39.0" prefWidth="86.0" text="Next" />
    </children>
 </AnchorPane>

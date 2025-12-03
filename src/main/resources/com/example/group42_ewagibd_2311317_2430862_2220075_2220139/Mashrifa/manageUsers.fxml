@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.ManageUsersController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="553.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.ManageUsersController">
+   <children>
+      <TextField fx:id="employeeIdTextField" layoutX="104.0" layoutY="71.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="nameTextField" layoutX="105.0" layoutY="113.0" />
+      <TextField fx:id="designationTextField" layoutX="106.0" layoutY="190.0" />
+      <ComboBox fx:id="departmentComboBox" layoutX="106.0" layoutY="154.0" prefWidth="150.0" />
+      <ComboBox fx:id="roleComboBox" layoutX="106.0" layoutY="226.0" prefWidth="150.0" />
+      <Label fx:id="employeeIdLabel" layoutX="25.0" layoutY="75.0" prefHeight="18.0" prefWidth="74.0" text="Employee ID:" />
+      <Label fx:id="roleLabel" layoutX="25.0" layoutY="229.0" prefHeight="18.0" prefWidth="74.0" text="Role:" />
+      <Label fx:id="designationLabel" layoutX="25.0" layoutY="193.0" prefHeight="18.0" prefWidth="74.0" text="Designation: " />
+      <Label fx:id="departmentLabel" layoutX="25.0" layoutY="157.0" prefHeight="18.0" prefWidth="74.0" text="Department:" />
+      <Label fx:id="nameLabel" layoutX="25.0" layoutY="116.0" prefHeight="18.0" prefWidth="74.0" text="Name:" />
+      <Button layoutX="315.0" layoutY="225.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="26.0" prefWidth="57.0" text="Add" />
+      <Button layoutX="583.0" layoutY="226.0" mnemonicParsing="false" onAction="#deactivateButtonOnAction" text="Deactivate" />
+      <Button layoutX="449.0" layoutY="225.0" mnemonicParsing="false" onAction="#editButtonOnAction" prefHeight="26.0" prefWidth="58.0" text="Edit" />
+      <TableView layoutX="7.0" layoutY="271.0" prefHeight="249.0" prefWidth="706.0">
+        <columns>
+          <TableColumn prefWidth="133.60000896453857" text="Employee ID" />
+          <TableColumn prefWidth="157.59996032714844" text="Name" />
+            <TableColumn prefWidth="136.0" text="Department" />
+            <TableColumn prefWidth="125.5999755859375" text="Designation " />
+            <TableColumn prefWidth="158.39990234375" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="221.0" style="-fx-font-style: Italic;" text="User Management" textFill="#1485f7">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

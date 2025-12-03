@@ -26,11 +26,11 @@ public class EmployeeDashboardController
     public void sendFeedbackOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handlePersonalInfoOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void nextButtonOnAction(ActionEvent actionEvent) {
     }
 
@@ -38,11 +38,19 @@ public class EmployeeDashboardController
     public void handleViewAnnouncementsOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleParticipateInTrainingOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void handleSubmitWelfareClaimOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void trainingEnrollmentOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleProfileOnAction(ActionEvent actionEvent) {
     }
 }

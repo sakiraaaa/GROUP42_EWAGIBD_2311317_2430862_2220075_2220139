@@ -8,25 +8,25 @@ public class AdminDashboardController
     @javafx.fxml.FXML
     private Label welcomeSystemLabel;
     @javafx.fxml.FXML
-    private Label adminLabel;
+    private Label systemAdministratorLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void approveClaimsOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void managerUsersOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void nextOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void openReportsOnAction(ActionEvent actionEvent) {
     }
 
@@ -44,5 +44,21 @@ public class AdminDashboardController
 
     @javafx.fxml.FXML
     public void fundBalanceOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void restoreBackupOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void fundMonitorOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void approveRejectClaimsOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void manageUsersOnAction(ActionEvent actionEvent) {
     }
 }
