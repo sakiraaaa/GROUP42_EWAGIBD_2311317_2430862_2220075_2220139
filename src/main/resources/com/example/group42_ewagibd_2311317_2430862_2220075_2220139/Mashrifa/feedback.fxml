@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.FeedbackController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="268.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.FeedbackController">
+   <children>
+      <Label fx:id="feedbackLabel" layoutX="188.0" layoutY="14.0" prefHeight="35.0" prefWidth="111.0" style="-fx-font-style: Italic;" text="FeedBack" textFill="#0945d1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="21.0" layoutY="178.0" prefHeight="62.0" prefWidth="470.0" text="                                           Feedback submitted successfully!" />
+      <Label fx:id="subjectLabel" layoutX="44.0" layoutY="80.0" prefHeight="18.0" prefWidth="72.0" text="Subject :" />
+      <Label fx:id="messageLabel" layoutX="44.0" layoutY="132.0" prefHeight="18.0" prefWidth="59.0" text="Message :" />
+      <TextField fx:id="subjectTextField" layoutX="125.0" layoutY="76.0" />
+      <TextArea fx:id="messageTextArea" layoutX="125.0" layoutY="121.0" prefHeight="42.0" prefWidth="238.0" />
+   </children>
 </AnchorPane>

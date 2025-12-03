@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.DonationController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="390.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Mashrifa.DonationController">
+   <children>
+      <Label fx:id="paymentMethodLabel" layoutX="15.0" layoutY="108.0" prefHeight="18.0" prefWidth="109.0" text="Payment Method :" />
+      <ComboBox fx:id="paymentMethodComboBox" layoutX="121.0" layoutY="105.0" prefWidth="150.0" />
+      <TextField fx:id="amountTextField" layoutX="121.0" layoutY="61.0" />
+      <TableView fx:id="donationTableView" layoutX="279.0" layoutY="63.0" prefHeight="310.0" prefWidth="319.0">
+        <columns>
+          <TableColumn fx:id="amountCol" prefWidth="117.5999755859375" text="Amount " />
+          <TableColumn fx:id="methodCol" prefWidth="102.4000244140625" text="Method " />
+            <TableColumn fx:id="dateCol" prefWidth="102.4000244140625" text="Date " />
+        </columns>
+      </TableView>
+      <Label fx:id="amountLabel" layoutX="14.0" layoutY="61.0" prefHeight="26.0" prefWidth="56.0" text="Amount :" />
+      <Label fx:id="donationLabel" layoutX="41.0" layoutY="-3.0" prefHeight="34.0" prefWidth="449.0" text="                                Donation">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="15.0" layoutY="152.0" prefHeight="18.0" prefWidth="62.0" text="Date :" />
+      <DatePicker fx:id="dateDatePicker" layoutX="121.0" layoutY="148.0" prefHeight="26.0" prefWidth="150.0" />
+      <Button layoutX="87.0" layoutY="249.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="125.0" text="Submit" />
+      <Label fx:id="errorLabel" layoutX="10.0" layoutY="303.0" prefHeight="62.0" prefWidth="262.0" text="Donation of [Amount] received successfully!" />
+   </children>
 </AnchorPane>
