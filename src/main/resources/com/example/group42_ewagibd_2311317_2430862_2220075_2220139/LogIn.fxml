@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.LogInController">
+   <children>
+      <Label layoutX="181.0" layoutY="21.0" prefHeight="29.0" prefWidth="238.0" text="LOGIN DASHBOARD">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LogInIDTF" layoutX="189.0" layoutY="95.0" prefHeight="26.0" prefWidth="193.0" promptText="Enter ID" />
+      <TextField fx:id="PasswordTF" layoutX="189.0" layoutY="142.0" prefHeight="26.0" prefWidth="193.0" promptText="Enter Password" />
+      <Button layoutX="462.0" layoutY="282.0" mnemonicParsing="false" onAction="#LogInOA" text="LogIn" />
+   </children>
+</AnchorPane>
