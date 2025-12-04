@@ -10,6 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class ConductEmergencyDrillController
 {
@@ -33,9 +34,11 @@ public class ConductEmergencyDrillController
     private TextField LocationTF;
     @javafx.fxml.FXML
     private TableColumn<EmergencyDrill,Integer> TeamMembersTC;
+    ArrayList<EmergencyDrill> drillList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
+
         TypeCB.getItems().addAll("Earthquake drill" , "Evacuation Drill" , "Lockdown Drill" , "Fire Drill");
         TeamMembersTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,Integer>("TeamMembers"));
         TypeTC.setCellValueFactory(new PropertyValueFactory<EmergencyDrill,String>("Type"));
@@ -48,10 +51,22 @@ public class ConductEmergencyDrillController
 
     @javafx.fxml.FXML
     public void ScheduleOA(ActionEvent actionEvent) {
+        EmergencyDrill drill = new EmergencyDrill(
+                Integer.parseInt(TeamMembersTF.getText()),
+                TypeCB.getValue(),
+                LocationTF.getText(),
+                DateDP.getValue()
+        );
+        drillList.add(drill);
+        ConductEmergencyDrillTV.getItems().clear();
+        ConductEmergencyDrillTV.refresh();
+        ConductEmergencyDrillTV.getItems().setAll(drillList);
     }
 
     @javafx.fxml.FXML
     public void ConductOA(ActionEvent actionEvent) {
+
+
     }
 
     @javafx.fxml.FXML

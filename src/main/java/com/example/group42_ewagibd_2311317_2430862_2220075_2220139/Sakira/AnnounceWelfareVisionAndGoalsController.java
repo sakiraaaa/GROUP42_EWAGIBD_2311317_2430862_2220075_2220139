@@ -9,6 +9,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 public class AnnounceWelfareVisionAndGoalsController
 {
     @javafx.fxml.FXML
@@ -27,9 +29,12 @@ public class AnnounceWelfareVisionAndGoalsController
     private Label AnnouncWelfareVisionAndGoalsLabel;
     @javafx.fxml.FXML
     private TextField DescriptionTF;
+    ArrayList<Announcement> AnnouncementList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
+        //AnnouncementList = new ArrayList<>();
+
         SelectiveVisibilityCB.getItems().addAll("employees", "private" , "public" , "custom");
         TitleTC.setCellValueFactory(new PropertyValueFactory<Announcement,String>("Title"));
         DescriptionTC.setCellValueFactory(new PropertyValueFactory<Announcement,String>("Description"));
@@ -42,7 +47,21 @@ public class AnnounceWelfareVisionAndGoalsController
 
     @javafx.fxml.FXML
     public void AddNewAnnouncementOA(ActionEvent actionEvent) {
+        Announcement announcement = new Announcement();
+        announcement.setTitle(TitleTF.getText());
+        announcement.setDescription(DescriptionTF.getText());
+        announcement.setSelectiveVisibility(SelectiveVisibilityCB.getValue());
+        announcement.setContent("");
+        announcement.setDepartment("");
+        announcement.setAnnouncementDate("");
+
+        AnnouncementList.add(announcement);
+        AnnounceWelfareVisionAndGoalsTV.getItems().add(announcement);
+
+
+
     }
+
 
     @javafx.fxml.FXML
     public void BackToDashBoardOA(ActionEvent actionEvent) {
