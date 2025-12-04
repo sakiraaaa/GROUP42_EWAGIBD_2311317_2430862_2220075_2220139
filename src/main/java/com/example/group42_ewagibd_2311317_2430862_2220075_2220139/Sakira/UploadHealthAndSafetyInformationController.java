@@ -10,6 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class UploadHealthAndSafetyInformationController
 {
@@ -34,9 +35,11 @@ public class UploadHealthAndSafetyInformationController
     @javafx.fxml.FXML
     private TableView<HealthAndSafetyData> HealthAndSafetyInfoTV;
 
+    ArrayList<HealthAndSafetyData> dataList = new ArrayList<>();
+
     @javafx.fxml.FXML
     public void initialize() {
-        DepartmentCB.getItems().addAll("CSE" , "CS" , "BBA" , "BioTechnology");
+        DepartmentCB.getItems().addAll("Health & Medical Welfare Department", "Training & Skill Development Department" , "Childcare, Education & Family Support Department");
         TitleTC.setCellValueFactory(new PropertyValueFactory<HealthAndSafetyData, String>("Title"));
         DepartmentTC.setCellValueFactory(new PropertyValueFactory<HealthAndSafetyData, String>("Department"));
         PublishedDateTC.setCellValueFactory(new PropertyValueFactory<HealthAndSafetyData, LocalDate>("PublishedDate"));
@@ -45,6 +48,39 @@ public class UploadHealthAndSafetyInformationController
 
     @javafx.fxml.FXML
     public void UploadNewHealthAndSafetyInformationOA(ActionEvent actionEvent) {
+        if (TitleTF.getText().trim().isEmpty()){
+            InfoLabel.setText("Please Enter Title");
+            return;
+        }
+        if (DepartmentCB.getValue()==null){
+            InfoLabel.setText("Please Select Department");
+            return;
+        }
+        if (PublishedDateDP.getValue()==null){
+            InfoLabel.setText("Please Select Published Date");
+            return;
+        }
+        if (DescriptionTF.getText().trim().isEmpty()){
+            InfoLabel.setText("Please Enter Description");
+            return;
+        }
+        InfoLabel.setText(" uploaded successfully");{
+
+        }
+        HealthAndSafetyData healthAndSafetyData = new HealthAndSafetyData(
+                TitleTF.getText(),
+                DepartmentCB.getValue(),
+                PublishedDateDP.getValue(),
+                DescriptionTF.getText()
+
+        );
+        dataList.add(healthAndSafetyData);
+        HealthAndSafetyInfoTV.getItems().clear();
+        HealthAndSafetyInfoTV.refresh();
+        HealthAndSafetyInfoTV.getItems().setAll(dataList);
+
+
+
     }
 
     @javafx.fxml.FXML

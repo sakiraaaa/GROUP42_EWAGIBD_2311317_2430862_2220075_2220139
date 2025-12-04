@@ -27,7 +27,7 @@ public class UpdateAssociationAnnouncementsController
 
     @javafx.fxml.FXML
     public void initialize() {
-        DepartmentCB.getItems().addAll("CS","CSE","BBA","BioTechnology");
+        DepartmentCB.getItems().addAll("Health & Medical Welfare Department", "Training & Skill Development Department" , "Childcare, Education & Family Support Department");
     }
 
     @javafx.fxml.FXML

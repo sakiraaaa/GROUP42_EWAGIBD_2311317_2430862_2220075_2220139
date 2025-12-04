@@ -65,9 +65,28 @@ public class ConductEmergencyDrillController
 
     @javafx.fxml.FXML
     public void ConductOA(ActionEvent actionEvent) {
+        if (TeamMembersTF.getText().trim().isEmpty()) {
+            ConductEmergencyDrillLabel.setText("Enter total team members");
+            return;
+        }
+        if (TypeCB.getValue()==null) {
+            ConductEmergencyDrillLabel.setText("Select Type");
+            return;
+        }
+        if (LocationTF.getText().trim().isEmpty()) {
+            ConductEmergencyDrillLabel.setText("Please Enter Location");
+            return;
+        }
+        if (DateDP.getValue()==null){
+            ConductEmergencyDrillLabel.setText("Please select Valid Date");
+            return;
+        }
+        ConductEmergencyDrillLabel.setText("Emergency Drill conducted successfully");
+
 
 
     }
+
 
     @javafx.fxml.FXML
     public void BackToDashBoardOA(ActionEvent actionEvent) {

@@ -43,10 +43,43 @@ public class AnnounceWelfareVisionAndGoalsController
 
     @javafx.fxml.FXML
     public void UploadOA(ActionEvent actionEvent) {
+        if (TitleTF.getText().trim().isEmpty()) {
+            AnnouncWelfareVisionAndGoalsLabel.setText("Enter Title ");
+            return;
+        }
+        if (DescriptionTF.getText().trim().isEmpty()) {
+            AnnouncWelfareVisionAndGoalsLabel.setText("Please enter specific description");
+            return;
+        }
+        if (SelectiveVisibilityCB.getValue() == null) {
+            AnnouncWelfareVisionAndGoalsLabel.setText("Please select visibility");
+        }
+        AnnouncWelfareVisionAndGoalsLabel.setText("New Announcement has been uploaded successfully");
     }
 
     @javafx.fxml.FXML
     public void AddNewAnnouncementOA(ActionEvent actionEvent) {
+        if (TitleTF.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please enter title to show it in the table");
+            alert.showAndWait();
+        }
+        if (DescriptionTF.getText().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please enter Description to show it in the table");
+            alert.showAndWait();
+
+        }
+        if (SelectiveVisibilityCB.getValue()== null){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please select visibility to show it in the table");
+            alert.showAndWait();
+        }
+
+
         Announcement announcement = new Announcement();
         announcement.setTitle(TitleTF.getText());
         announcement.setDescription(DescriptionTF.getText());
