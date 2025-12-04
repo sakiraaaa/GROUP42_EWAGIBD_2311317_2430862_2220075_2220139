@@ -30,8 +30,29 @@ public class UpdateAssociationAnnouncementsController
         DepartmentCB.getItems().addAll("CS","CSE","BBA","BioTechnology");
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void PublishAnnouncementOA(ActionEvent actionEvent) {
+        String title = TitleTF.getText().trim();
+        if (TitleTF.getText().trim().isEmpty()) {
+            AnnouncementLabel.setText("Please Enter Updated Title");
+            return;
+        }
+        if (ContentTF.getText().trim().isEmpty()) {
+            AnnouncementLabel.setText("Please Enter Updated Content");
+            return;
+        }
+        if (DepartmentCB.getValue() == null){
+            AnnouncementLabel.setText("Please Enter Department");
+            return;
+        }
+        if (AnnouncementDateDP.getValue()==null) {
+            AnnouncementLabel.setText("Please Enter Announcement Date");
+            return;
+        }
+
+        AnnouncementLabel.setText("Announcement \"" + title + "\" has been published successfully.");
+
+
     }
 
     @javafx.fxml.FXML
