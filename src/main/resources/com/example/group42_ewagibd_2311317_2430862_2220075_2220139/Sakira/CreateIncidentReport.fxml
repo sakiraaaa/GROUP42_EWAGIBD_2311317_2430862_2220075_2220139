@@ -30,6 +30,8 @@
       </TableView>
       <Button layoutX="421.0" layoutY="500.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="179.0" text="Back To DashBoard" />
       <TextField fx:id="ReporterNameTF" layoutX="397.0" layoutY="64.0" />
-      <RadioButton layoutX="38.0" layoutY="100.0" mnemonicParsing="false" onAction="#isAmRadioButton" text="AM" />
+      <RadioButton fx:id="amRadioButton" layoutX="38.0" layoutY="100.0" mnemonicParsing="false" onAction="#isAmRadioButton" text="AM" />
+      <Button layoutX="32.0" layoutY="501.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="34.0" layoutY="540.0" mnemonicParsing="false" onAction="#DrillOA" text="Go To Conduct Emergency Drill DashBoard" />
    </children>
 </AnchorPane>

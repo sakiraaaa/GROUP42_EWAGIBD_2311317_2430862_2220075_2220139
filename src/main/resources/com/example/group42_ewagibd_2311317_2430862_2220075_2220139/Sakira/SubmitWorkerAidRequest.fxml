@@ -18,7 +18,8 @@
       <TextField fx:id="ReasonTF" layoutX="136.0" layoutY="197.0" />
       <TextField fx:id="RequestedAmountTF" layoutX="136.0" layoutY="248.0" />
       <ComboBox fx:id="TypeOfAidCB" layoutX="136.0" layoutY="145.0" prefWidth="150.0" />
-      <Button layoutX="52.0" layoutY="476.0" mnemonicParsing="false" onAction="#SubmitRequestOA" prefHeight="47.0" prefWidth="298.0" text="Submit Request" />
+      <Button layoutX="25.0" layoutY="341.0" mnemonicParsing="false" onAction="#SubmitRequestOA" prefHeight="47.0" prefWidth="298.0" text="Submit Request" />
       <Button layoutX="473.0" layoutY="543.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="169.0" text="Back To DashBoard" />
+      <Button layoutX="25.0" layoutY="543.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
    </children>
 </AnchorPane>

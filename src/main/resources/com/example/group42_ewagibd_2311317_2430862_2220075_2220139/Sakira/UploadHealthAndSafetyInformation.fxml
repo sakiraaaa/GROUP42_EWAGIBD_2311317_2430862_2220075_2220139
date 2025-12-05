@@ -30,5 +30,7 @@
       <Label fx:id="InfoLabel" layoutX="42.0" layoutY="413.0" prefHeight="26.0" prefWidth="525.0" style="-fx-background-color: yellow;" textFill="#7c1414" />
       <Button layoutX="47.0" layoutY="156.0" mnemonicParsing="false" onAction="#UploadNewHealthAndSafetyInformationOA" prefHeight="26.0" prefWidth="541.0" text="Upload New Health And Safety Information" />
       <Button layoutX="498.0" layoutY="500.0" mnemonicParsing="false" onAction="#BackToDashBoard" text="Back To DashBoard" />
+      <Button layoutX="35.0" layoutY="488.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="35.0" layoutY="546.0" mnemonicParsing="false" onAction="#GoToScheduleTrainingProgramDashBoardOA" text="Go to Schedule Training Program Dashboard" />
    </children>
 </AnchorPane>

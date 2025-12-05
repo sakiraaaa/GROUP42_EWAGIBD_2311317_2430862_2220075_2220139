@@ -101,4 +101,18 @@ public class ConductEmergencyDrillController
             throw new RuntimeException(e);
         }
     }
+
+    @javafx.fxml.FXML
+    public void PartnershipsOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PostUpdatesOnCollaborationsAndPartnerships.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Post Updates On Collaborations And Partnerships");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

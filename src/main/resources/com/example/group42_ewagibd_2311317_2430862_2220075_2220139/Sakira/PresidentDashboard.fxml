@@ -20,6 +20,5 @@
       <Button layoutX="83.0" layoutY="310.0" mnemonicParsing="false" onAction="#RespondToIncidentReportOA" prefHeight="34.0" prefWidth="252.0" text="Respond to Incident Report" textFill="#2e5c8a" />
       <Button layoutX="85.0" layoutY="358.0" mnemonicParsing="false" onAction="#AnnounceAndScheduleAuthorityMeetingOA" prefHeight="34.0" prefWidth="252.0" text="Announce And Schedule Authority Meeting" textFill="#265e9a" />
       <Button layoutX="85.0" layoutY="402.0" mnemonicParsing="false" onAction="#ProposePartnershipOA" prefHeight="34.0" prefWidth="252.0" text="Propose Partnership" textFill="#285e94" />
-      <Button layoutX="455.0" layoutY="508.0" mnemonicParsing="false" onAction="#NextOA" prefHeight="26.0" prefWidth="86.0" text="Next" />
    </children>
 </AnchorPane>

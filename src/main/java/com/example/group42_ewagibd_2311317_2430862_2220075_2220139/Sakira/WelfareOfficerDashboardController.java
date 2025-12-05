@@ -45,7 +45,7 @@ public class WelfareOfficerDashboardController
     @javafx.fxml.FXML
     public void PostAwarenessOnWorkersRightAndBenefitsOA(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PostAwarenessOnWorkersRightAndBenefits.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PostAwarenessOnWorkersRightsAndBenefits.fxml"));
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("Post Awareness On Workers Right And Benefits");
@@ -70,7 +70,7 @@ public class WelfareOfficerDashboardController
         }
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void NextOA(ActionEvent actionEvent) {
 
     }

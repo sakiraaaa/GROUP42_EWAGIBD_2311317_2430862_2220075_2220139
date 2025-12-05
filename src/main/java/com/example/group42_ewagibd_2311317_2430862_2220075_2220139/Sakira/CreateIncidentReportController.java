@@ -10,6 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class CreateIncidentReportController
 {
@@ -31,7 +32,10 @@ public class CreateIncidentReportController
     private TextField ReporterNameTF;
     @javafx.fxml.FXML
     private TableColumn<Report , String> ReporterNameTC;
-
+    @javafx.fxml.FXML
+    private RadioButton amRadioButton;
+    ArrayList<Report> ReportList = new ArrayList<>();
+    ToggleGroup tg;
 
 
     @javafx.fxml.FXML
@@ -44,10 +48,36 @@ public class CreateIncidentReportController
 
     @javafx.fxml.FXML
     public void SubmitReportOA(ActionEvent actionEvent) {
+        String reporterName = ReporterNameTF.getText();
+        LocalDate date = DateDP.getValue();
+        String time = TimeTF.getText();
+        String location = LocationTF.getText();
+
+        Report report = new Report(reporterName,date,time,location);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Incident Report Submitted");
+        alert.setHeaderText("The Incident Report has been successfully submitted!");
+        alert.setContentText(
+                "Reporter Name: " + reporterName + "\n" +
+                        "Date: " + date + "\n" +
+                        "Time: " + time + "\n" +
+                        "Location: " + location + "\n"
+
+        );
+        alert.showAndWait();
     }
 
     @javafx.fxml.FXML
     public void CreateReportOA(ActionEvent actionEvent) {
+        Report report = new Report(
+                ReporterNameTF.getText(),
+                DateDP.getValue(),
+                TimeTF.getText(),
+                LocationTF.getText()
+        );
+        ReportList.add(report);
+        CreateIncidentReportTV.getItems().add(report);
+
     }
 
     @javafx.fxml.FXML
@@ -66,5 +96,39 @@ public class CreateIncidentReportController
 
     @javafx.fxml.FXML
     public void isAmRadioButton(ActionEvent actionEvent) {
+        String time = "";
+        if (amRadioButton.isSelected()){
+            time = "AM";
+
+        }
+
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogIn.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("LogIn");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void DrillOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/ConductEmergencyDrill.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Conduct Emergency Drill");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
