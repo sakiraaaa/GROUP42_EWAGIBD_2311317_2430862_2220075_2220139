@@ -68,4 +68,32 @@ public class UpdateAssociationAnnouncementsController
             throw new RuntimeException(e);
         }
     }
+
+    @javafx.fxml.FXML
+    public void PromoteAnEmployeeDashboardOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PromoteAnEmployee.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Promote An Employee");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogIn.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("LogIn");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

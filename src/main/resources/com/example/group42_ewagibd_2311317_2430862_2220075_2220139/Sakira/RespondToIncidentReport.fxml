@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.RespondToIncidentReportController">
    <children>
       <Label layoutX="31.0" layoutY="44.0" text="Response Messege:" />
-      <Button layoutX="31.0" layoutY="446.0" mnemonicParsing="false" onAction="#RespondOA" prefHeight="64.0" prefWidth="117.0" text="Respond" />
+      <Button layoutX="28.0" layoutY="415.0" mnemonicParsing="false" onAction="#RespondOA" prefHeight="64.0" prefWidth="117.0" text="Respond" />
       <TableView fx:id="IncidentReportTV" layoutX="28.0" layoutY="218.0" prefHeight="184.0" prefWidth="508.0">
         <columns>
           <TableColumn fx:id="ReporterNameTC" prefWidth="105.0" text="Reporter Name" />
@@ -21,5 +21,7 @@
       </TableView>
       <Button layoutX="452.0" layoutY="523.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" text="Back To DashBoard" />
       <TextField fx:id="ResponseMessageTF" layoutX="154.0" layoutY="40.0" prefHeight="26.0" prefWidth="237.0" />
+      <Button layoutX="31.0" layoutY="497.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="31.0" layoutY="537.0" mnemonicParsing="false" onAction="#AuthorityMeetingDashboardOA" text="Go To Announce and schedule authority meeting Dashboard " />
    </children>
 </AnchorPane>

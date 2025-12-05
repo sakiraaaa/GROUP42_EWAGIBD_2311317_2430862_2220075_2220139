@@ -22,5 +22,7 @@
       <Label fx:id="AddNewTAndCLabel" layoutX="359.0" layoutY="26.0" prefHeight="169.0" prefWidth="221.0" style="-fx-background-color: pink; -fx-background-position: center;" />
       <TextField fx:id="SpecificCriteriaTF" layoutX="116.0" layoutY="174.0" prefHeight="26.0" prefWidth="221.0" />
       <Button layoutX="293.0" layoutY="476.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="247.0" text="Back To DashBoard" />
+      <Button layoutX="19.0" layoutY="464.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="242.0" layoutY="525.0" mnemonicParsing="false" onAction="#AssociationDashboardOA" prefHeight="26.0" prefWidth="349.0" text="Go To Update Association Announcements Dashboard" />
    </children>
 </AnchorPane>
