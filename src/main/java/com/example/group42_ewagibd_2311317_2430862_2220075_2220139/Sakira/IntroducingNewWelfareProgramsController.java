@@ -9,6 +9,9 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -159,6 +162,41 @@ public class IntroducingNewWelfareProgramsController
             nextStage.show();
         } catch (Exception e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void GoToLoadSceneOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/IntroducingNewWelfareProgramsBin.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Introducing New Welfare Programs Bin");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void AddBinFileOA(ActionEvent actionEvent) {
+        try {
+            File f = new File("IntroducingNewWelfarePrograms.bin");
+            FileOutputStream fos = null;
+            ObjectOutputStream oos = null;
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(f, true);
+                oos = new ObjectOutputStream(fos);
+            }
+            for (Programs a : programList) {
+                oos.writeObject(a);
+            }
+            oos.close();
+        } catch (Exception e) {
         }
     }
 }

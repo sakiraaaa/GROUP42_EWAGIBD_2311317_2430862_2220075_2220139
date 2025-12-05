@@ -22,8 +22,8 @@
       <ComboBox fx:id="ProgramCatagoryCB" layoutX="389.0" layoutY="122.0" prefWidth="150.0" />
       <TextField fx:id="TargetBeneficiariesTF" layoutX="384.0" layoutY="74.0" />
       <Button layoutX="23.0" layoutY="182.0" mnemonicParsing="false" onAction="#AddProgramOA" prefHeight="26.0" prefWidth="509.0" text="Add Program" />
-      <Button layoutX="24.0" layoutY="419.0" mnemonicParsing="false" onAction="#NewWelfareProgramOA" prefHeight="65.0" prefWidth="137.0" text="New Welfare Program" />
-      <Label fx:id="IntroducingWelfareProgramLabel" layoutX="227.0" layoutY="425.0" prefHeight="38.0" prefWidth="336.0" style="-fx-background-color: pink;" />
+      <Button layoutX="24.0" layoutY="382.0" mnemonicParsing="false" onAction="#NewWelfareProgramOA" prefHeight="65.0" prefWidth="137.0" text="New Welfare Program" />
+      <Label fx:id="IntroducingWelfareProgramLabel" layoutX="227.0" layoutY="388.0" prefHeight="38.0" prefWidth="336.0" style="-fx-background-color: pink;" />
       <TableView fx:id="WelfareProgramsTV" layoutX="6.0" layoutY="225.0" prefHeight="150.0" prefWidth="586.0">
         <columns>
           <TableColumn fx:id="ProgramTitleTC" prefWidth="97.0" text="Program Title" />
@@ -33,8 +33,10 @@
             <TableColumn fx:id="DateTC" prefWidth="82.0" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="406.0" layoutY="515.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="172.0" text="Back To DashBoard" />
+      <Button layoutX="395.0" layoutY="434.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="172.0" text="Back To DashBoard" />
       <Button layoutX="26.0" layoutY="495.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
       <Button layoutX="26.0" layoutY="528.0" mnemonicParsing="false" onAction="#RespondToIncidentReportDashboardOA" text="Go To Respond To Incident Report Dashboard" />
+      <Button layoutX="401.0" layoutY="470.0" mnemonicParsing="false" onAction="#AddBinFileOA" text="Add Bin File" />
+      <Button layoutX="401.0" layoutY="509.0" mnemonicParsing="false" onAction="#GoToLoadSceneOA" text="Go To Load Scene" />
    </children>
 </AnchorPane>

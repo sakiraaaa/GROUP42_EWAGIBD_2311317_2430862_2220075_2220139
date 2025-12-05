@@ -9,25 +9,32 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
 
 public class RespondToIncidentReportController
 {
     @javafx.fxml.FXML
-    private TableView IncidentReportTV;
+    private TableView<Report> IncidentReportTV;
     @javafx.fxml.FXML
-    private TableColumn DateTC;
+    private TableColumn<Report, LocalDate> DateTC;
     @javafx.fxml.FXML
-    private TableColumn LocationTC;
+    private TableColumn<Report,String> LocationTC;
     @javafx.fxml.FXML
-    private TableColumn ReporterNameTC;
-    @javafx.fxml.FXML
-    private TableColumn IncidentTypeTC;
+    private TableColumn<Report,String> ReporterNameTC;
     @javafx.fxml.FXML
     private TextField ResponseMessageTF;
+    @javafx.fxml.FXML
+    private TableColumn<Report,String> TimeTC;
 
     @javafx.fxml.FXML
     public void initialize() {
+        ReporterNameTC.setCellValueFactory(new PropertyValueFactory<Report , String>("ReporterName"));
+        LocationTC.setCellValueFactory(new PropertyValueFactory<Report , String>("Location"));
+        DateTC.setCellValueFactory(new PropertyValueFactory<Report , LocalDate>("Date"));
+        TimeTC.setCellValueFactory(new PropertyValueFactory<Report , String>("Time"));
     }
 
     @Deprecated

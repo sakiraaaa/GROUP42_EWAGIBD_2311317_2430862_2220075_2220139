@@ -9,6 +9,9 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -32,8 +35,6 @@ public class CreateIncidentReportController
     private TextField ReporterNameTF;
     @javafx.fxml.FXML
     private TableColumn<Report , String> ReporterNameTC;
-    @javafx.fxml.FXML
-    private RadioButton amRadioButton;
     ArrayList<Report> ReportList = new ArrayList<>();
     ToggleGroup tg;
 
@@ -94,15 +95,9 @@ public class CreateIncidentReportController
         }
     }
 
-    @javafx.fxml.FXML
-    public void isAmRadioButton(ActionEvent actionEvent) {
-        String time = "";
-        if (amRadioButton.isSelected()){
-            time = "AM";
 
-        }
 
-    }
+
 
     @javafx.fxml.FXML
     public void LogOutOA(ActionEvent actionEvent) {
@@ -125,6 +120,41 @@ public class CreateIncidentReportController
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("Conduct Emergency Drill");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void AddBinFileOA(ActionEvent actionEvent) {
+        try {
+            File f = new File("CreateIncidentReport.bin");
+            FileOutputStream fos = null;
+            ObjectOutputStream oos = null;
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(f, true);
+                oos = new ObjectOutputStream(fos);
+            }
+            for (Report a : ReportList) {
+                oos.writeObject(a);
+            }
+            oos.close();
+        } catch (Exception e) {
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void GoToLoadSceneOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/CreateIncidentReportBin.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("CreateIncidentReportBin");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {

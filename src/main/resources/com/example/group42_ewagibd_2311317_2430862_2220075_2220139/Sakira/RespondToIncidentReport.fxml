@@ -15,8 +15,8 @@
         <columns>
           <TableColumn fx:id="ReporterNameTC" prefWidth="105.0" text="Reporter Name" />
           <TableColumn fx:id="LocationTC" prefWidth="131.0" text="Location" />
-            <TableColumn fx:id="IncidentTypeTC" prefWidth="141.0" text="Incident Type" />
-            <TableColumn fx:id="DateTC" prefWidth="130.0" text="Date" />
+            <TableColumn fx:id="DateTC" prefWidth="141.0" text="Date" />
+            <TableColumn fx:id="TimeTC" prefWidth="130.0" text="Time" />
         </columns>
       </TableView>
       <Button layoutX="452.0" layoutY="523.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" text="Back To DashBoard" />
