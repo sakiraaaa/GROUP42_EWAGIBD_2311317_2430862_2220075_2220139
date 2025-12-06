@@ -2,7 +2,8 @@ package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira;
 
 import java.time.LocalDate;
 
-public class Meeting {
+public class
+Meeting {
     private String MeetingTitle;
     private String Agenda;
     private String Department;
