@@ -1,8 +1,9 @@
 package com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Programs {
+public class Programs implements Serializable {
     private String ProgramTitle;
     private String ProgramDescription;
     private String TargetBeneficiaries;

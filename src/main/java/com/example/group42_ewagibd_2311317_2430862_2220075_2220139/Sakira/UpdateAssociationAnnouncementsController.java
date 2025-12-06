@@ -27,11 +27,32 @@ public class UpdateAssociationAnnouncementsController
 
     @javafx.fxml.FXML
     public void initialize() {
-        DepartmentCB.getItems().addAll("CS","CSE","BBA","BioTechnology");
+        DepartmentCB.getItems().addAll("Health & Medical Welfare Department", "Training & Skill Development Department" , "Childcare, Education & Family Support Department");
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void PublishAnnouncementOA(ActionEvent actionEvent) {
+        String title = TitleTF.getText().trim();
+        if (TitleTF.getText().trim().isEmpty()) {
+            AnnouncementLabel.setText("Please Enter Updated Title");
+            return;
+        }
+        if (ContentTF.getText().trim().isEmpty()) {
+            AnnouncementLabel.setText("Please Enter Updated Content");
+            return;
+        }
+        if (DepartmentCB.getValue() == null){
+            AnnouncementLabel.setText("Please Enter Department");
+            return;
+        }
+        if (AnnouncementDateDP.getValue()==null) {
+            AnnouncementLabel.setText("Please Enter Announcement Date");
+            return;
+        }
+
+        AnnouncementLabel.setText("Announcement \"" + title + "\" has been published successfully.");
+
+
     }
 
     @javafx.fxml.FXML
@@ -41,6 +62,34 @@ public class UpdateAssociationAnnouncementsController
             Scene nextScene = new Scene(fxmlLoader.load());
             Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             nextStage.setTitle("PresidentDashboard");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void PromoteAnEmployeeDashboardOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/PromoteAnEmployee.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Promote An Employee");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogIn.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("LogIn");
             nextStage.setScene(nextScene);
             nextStage.show();
         } catch (Exception e) {

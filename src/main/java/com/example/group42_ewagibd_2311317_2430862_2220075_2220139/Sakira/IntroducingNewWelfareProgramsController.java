@@ -9,7 +9,11 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class IntroducingNewWelfareProgramsController
 {
@@ -35,6 +39,9 @@ public class IntroducingNewWelfareProgramsController
     private ComboBox<String> ProgramCatagoryCB;
     @javafx.fxml.FXML
     private TableColumn<Programs,String> ProgramCatagoryTC;
+    @javafx.fxml.FXML
+    private TextField TargetBeneficiariesTF;
+    ArrayList<Programs> programList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -48,10 +55,71 @@ public class IntroducingNewWelfareProgramsController
 
     @javafx.fxml.FXML
     public void NewWelfareProgramOA(ActionEvent actionEvent) {
+        if (ProgramTitleTF.getText().trim().isEmpty()){
+            IntroducingWelfareProgramLabel.setText("Please Enter Program Title");
+            return;
+        }
+        if (ProgramDescriptionTF.getText().trim().isEmpty()){
+            IntroducingWelfareProgramLabel.setText("Please Enter Program Description");
+            return;
+        }
+        if (TargetBeneficiariesTF.getText().trim().isEmpty()){
+            IntroducingWelfareProgramLabel.setText("Please enter Target Beneficiaries");
+            return;
+        }
+        if (ProgramCatagoryCB.getValue()==null){
+            IntroducingWelfareProgramLabel.setText("Please select Program Catagory");
+            return;
+        }
+        if (DateDP.getValue()== null){
+            IntroducingWelfareProgramLabel.setText("Please select Date");
+        }
+        IntroducingWelfareProgramLabel.setText("new welfare program has been introduced successfully");
     }
 
     @javafx.fxml.FXML
     public void AddProgramOA(ActionEvent actionEvent) {
+        if(ProgramTitleTF.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please enter title to show it in the table");
+            alert.showAndWait();
+        }
+        if (ProgramDescriptionTF.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please enter Program Description to show it in the table");
+            alert.showAndWait();
+        }
+        if (TargetBeneficiariesTF.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please enter Target Beneficiaries to show it in the table");
+            alert.showAndWait();
+        }
+        if (ProgramCatagoryCB.getValue()==null){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please Select Program Catagory to show it in the table");
+            alert.showAndWait();
+        }
+        if (DateDP.getValue()==null){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Invalid input");
+            alert.setContentText("Please Select Delete to show it in the table");
+            alert.showAndWait();
+        }
+
+        Programs programs = new Programs(
+                ProgramTitleTF.getText(),
+                ProgramDescriptionTF.getText(),
+                TargetBeneficiariesTF.getText(),
+                ProgramCatagoryCB.getValue(),
+                DateDP.getValue()
+        );
+        programList.add(programs);
+        WelfareProgramsTV.getItems().add(programs);
+
     }
 
     @javafx.fxml.FXML
@@ -69,4 +137,66 @@ public class IntroducingNewWelfareProgramsController
     }
 
 
+    @javafx.fxml.FXML
+    public void RespondToIncidentReportDashboardOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/RespondToIncidentReport.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("RespondToIncidentReport");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void LogOutOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LogIn.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("LogIn");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void GoToLoadSceneOA(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sakira/IntroducingNewWelfareProgramsBin.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Introducing New Welfare Programs Bin");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void AddBinFileOA(ActionEvent actionEvent) {
+        try {
+            File f = new File("IntroducingNewWelfarePrograms.bin");
+            FileOutputStream fos = null;
+            ObjectOutputStream oos = null;
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(f, true);
+                oos = new ObjectOutputStream(fos);
+            }
+            for (Programs a : programList) {
+                oos.writeObject(a);
+            }
+            oos.close();
+        } catch (Exception e) {
+        }
+    }
 }

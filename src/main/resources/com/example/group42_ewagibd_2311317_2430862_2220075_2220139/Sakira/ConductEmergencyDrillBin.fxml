@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="595.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group42_ewagibd_2311317_2430862_2220075_2220139.Sakira.ConductEmergencyDrillBinController">
+   <children>
+      <TableView fx:id="ConductEmergencyDrillTV" layoutX="53.0" layoutY="154.0" prefHeight="144.0" prefWidth="528.0">
+         <columns>
+            <TableColumn fx:id="TeamMembersTC" prefWidth="129.0" text="Team Members" />
+            <TableColumn fx:id="TypeTC" prefWidth="93.0" text="Type" />
+            <TableColumn fx:id="LocationTC" prefWidth="172.0" text="Location" />
+            <TableColumn fx:id="DateTC" prefWidth="133.0" text="Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="59.0" layoutY="329.0" mnemonicParsing="false" onAction="#LoadTableFromBinFileOA" text="Load Table From Bin File" />
+   </children>
+</AnchorPane>

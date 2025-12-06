@@ -20,7 +20,6 @@
       <Button layoutX="86.0" layoutY="330.0" mnemonicParsing="false" onAction="#ConductEmergencyDrillOA" prefHeight="33.0" prefWidth="287.0" text="Conduct Emergency Drill" textFill="#3c12b5" />
       <Button layoutX="86.0" layoutY="377.0" mnemonicParsing="false" onAction="#PostUpdatesOnCollaborationsAndPartnershipsOA" prefHeight="39.0" prefWidth="287.0" text="Post Updates On Collaborations And Partnerships" textFill="#3d0f99" />
       <Button layoutX="86.0" layoutY="430.0" mnemonicParsing="false" onAction="#SubmitWorkerAidRequestOA" prefHeight="33.0" prefWidth="287.0" text="Submit Worker Aid Request" textFill="#1b139c" />
-      <Button layoutX="546.0" layoutY="519.0" mnemonicParsing="false" onAction="#NextOA" text="Next" />
       <Button layoutX="86.0" layoutY="89.0" mnemonicParsing="false" onAction="#UploadHealthAndSafetyInformationOA" prefHeight="33.0" prefWidth="287.0" text="Upload Health and Safety Information" textFill="#441fd7" />
    </children>
 </AnchorPane>

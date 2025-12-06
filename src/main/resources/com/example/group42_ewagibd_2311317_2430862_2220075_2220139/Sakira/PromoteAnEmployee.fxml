@@ -26,5 +26,7 @@
       <TextField fx:id="PerformanceLevelTF" layoutX="139.0" layoutY="184.0" />
       <Label fx:id="PromoteAnEmployeeLabel" layoutX="22.0" layoutY="400.0" prefHeight="44.0" prefWidth="355.0" style="-fx-background-color: pink;" />
       <Button layoutX="419.0" layoutY="505.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="150.0" text="Back To DashBoard" />
+      <Button layoutX="30.0" layoutY="480.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="30.0" layoutY="519.0" mnemonicParsing="false" onAction="#WelfareProgramsOA" text="Go To Introducing new welfare programs Dashboard" />
    </children>
 </AnchorPane>

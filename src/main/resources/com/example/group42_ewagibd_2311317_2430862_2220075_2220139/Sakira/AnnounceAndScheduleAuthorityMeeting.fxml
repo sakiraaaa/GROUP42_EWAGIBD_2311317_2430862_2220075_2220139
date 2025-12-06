@@ -21,6 +21,9 @@
       <DatePicker fx:id="DateDP" layoutX="114.0" layoutY="196.0" />
       <Button layoutX="373.0" layoutY="33.0" mnemonicParsing="false" onAction="#AnnounceOA" prefHeight="106.0" prefWidth="118.0" text="Announce " />
       <Button layoutX="21.0" layoutY="296.0" mnemonicParsing="false" onAction="#ConfirmAnnouncementOA" prefHeight="41.0" prefWidth="280.0" text="Confirm Announcement " />
-      <Button layoutX="254.0" layoutY="521.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="295.0" text="Back To DashBoard" />
+      <Button layoutX="272.0" layoutY="476.0" mnemonicParsing="false" onAction="#BackToDashBoardOA" prefHeight="26.0" prefWidth="295.0" text="Back To DashBoard" />
+      <Label fx:id="MeetingLabel" layoutX="61.0" layoutY="345.0" prefHeight="67.0" prefWidth="481.0" style="-fx-background-color: pink;" />
+      <Button layoutX="17.0" layoutY="476.0" mnemonicParsing="false" onAction="#LogOutOA" text="LogOut" />
+      <Button layoutX="17.0" layoutY="515.0" mnemonicParsing="false" onAction="#ProposePartnershipOA" text="Go To Propose partnership Dashboard" />
    </children>
 </AnchorPane>
